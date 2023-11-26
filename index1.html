@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Set the character encoding and page title -->
+  <meta charset="UTF-8" />
+  <title>Video Project</title>
+  
+  <!-- Link to the CSS file for page styling -->
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Link to Font Awesome for access to icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body class="imageBackground">
+  <!-- Popup container for the guide to the virtual tour -->
+  <div id="popup-container">
+    <div id="popup-content">
+      <h2>Guide To Interactive Virtual Tour</h2>
+      <p>This virtual tour offers an immersive experience of capstone projects, presenting a range of options at each
+        project site. Participants can choose to view a specific project or continue to another, with the opportunity to
+        revisit or exit the tour upon completion.</p>
+      <!-- Close button for the popup guide -->
+      <button class="close-button" onclick="closePopup()">Got It!</button>
+    </div>
+  </div>
+  
+  <!-- Main container for the page -->
+  <div class="mainContainer">
+    <h1>Virtual Tour: IM_CAPSTONE_final_FINAL</h1>
+    <h2>What Lies Beyond?</h2>
+    
+    <!-- Container for the Vimeo player and buttons -->
+    <div class="videoContainer">
+      <!-- The Vimeo player iframe -->
+      <div id="vimeoPlayer" data-vimeo-id="822453988"></div>
+      
+      <!-- Buttons for controlling the video and navigating the tour -->
+      <div class="buttons">
+        <button id="play-video" class="button">Play Video</button>
+
+        <!-- Buttons for navigating to project 1 -->
+        <button id="project1" class="buttonLeft" style="display: none">View Project 1</button>
+        <button id="continue" class="buttonRight" style="display: none">Continue Tour</button>
+
+        <!-- Buttons for navigating to project 2 -->
+        <button id="project2" class="buttonLeft" style="display: none">View Project 2</button>
+        <button id="continue2" class="buttonRight" style="display: none">Continue Tour</button>
+
+        <!-- Buttons for navigating to project 3 -->
+        <button id="project3" class="buttonLeft" style="display: none">View Project 3</button>
+        <button id="continue3" class="buttonRight" style="display: none">Continue Tour</button>
+
+        <!-- Buttons for navigating to project 4 -->
+        <button id="project4" class="buttonLeft" style="display: none">View Project 4</button>
+        <button id="continue4" class="buttonRight" style="display: none">Continue Tour</button>
+
+        <!-- Buttons for exiting or revisiting the tour -->
+        <button id="exit" class="buttonLeft" style="display: none">Exit</button>
+        <button id="revisit" class="buttonRight" style="display: none">Revisit</button>
+
+      </div>
+    </div>
+
+    <!-- Button to go back to the previous page -->
+    <button id="back-button" onclick="location.href='index.html'">
+      <i class="fas fa-arrow-circle-left"></i>
+    </button>
+  </div>
+  
+  <!-- Link to the Vimeo player API and the script file for page functionality -->
+  <script src="https://player.vimeo.com/api/player.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

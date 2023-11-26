@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+
+.mainContainer {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.videoContainer {
+  display: flex;
+  position: relative;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#vimeoPlayer iframe {
+  position: relative;
+  width: 50vw;
+  height: 50vh;
+}
+
+.button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.buttonLeft {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.buttonRight {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+body {
+
+  margin: 0;
+
+  padding: 0;
+
+  min-height: 100vh;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-family: sans-serif;
+
+  background-color: #f1f1f1;
+
+  flex-direction: column;
+
+}
+
+.imageBackground{
+
+  background-image: url('blackbox.jpg');
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  z-index: -1;
+}
+
+h1 {
+  font-family: 'Bruno Ace SC', cursive;
+  color: #f1f1f1;
+  font-size: 50px;
+  text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+h2{
+  font-family: 'Bruno Ace SC', cursive;
+  color: #f1f1f1;
+  font-size: 30px;
+  text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.slide.slide1 {
+
+  background-size: cover;
+
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+}
+
+#blackbox {
+  background-image: url('blackbox.png') !important;
+}
+
+#blackboxImage{
+  background-image: url('3.jpeg') !important;
+}
+
+#interactiveMedia {
+  background-image: url('Desert.jpg') !important;
+}
+
+#intro{
+  background-image: url('IM.jpeg') !important;
+}
+
+#requirements{
+  background-image: url('major.jpeg') !important;
+}
+
+#bulletin{
+  background-image: url('Bulletin.png') !important;
+}
+
+#centre{
+  background-image: url('4.jpeg') !important;
+}
+
+.container .card .icon {
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  background: #2c73df;
+
+}
+
+.container .card .slide {
+
+  width: 300px;
+
+  height: 200px;
+
+  transition: 0.5s;
+
+}
+
+.container .card .slide.slide1 {
+
+  position: relative;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  z-index: 1;
+
+  transition: .7s;
+
+  transform: translateY(100px);
+
+}
+
+.container .card:hover .slide.slide1 {
+
+  transform: translateY(0px);
+
+}
+
+.container .card .slide.slide2 {
+
+  position: relative;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 20px;
+
+  box-sizing: border-box;
+
+  transition: .8s;
+
+  transform: translateY(-100px);
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+
+  background-color: white;
+
+}
+
+.container .card:hover .slide.slide2 {
+
+  transform: translateY(0);
+
+}
+
+.container .card .slide.slide2 .content p {
+
+  margin: 0;
+
+  padding: 0;
+
+  text-align: center;
+
+  color: #414141;
+
+}
+
+.container .card .slide.slide2 .content h3 {
+
+  margin: 0 0 10px 0;
+
+  padding: 0;
+
+  font-size: 24px;
+
+  text-align: center;
+
+  color: #414141;
+
+}
+
+.content button ,.close-button{
+
+  position: relative;
+
+  display: inline-block;
+
+  padding: 10px 20px;
+
+  background: #2c73df;
+
+  color: #fff;
+
+  border: none;
+
+  outline: none;
+
+  cursor: pointer;
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+  border-radius: 5px;
+
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+
+  transition: 0.5s;
+
+  margin-top: 15px;
+
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  margin: 10px;
+}
+
+#back-button{
+  position: absolute;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #2c73df;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+  transition: 0.5s;
+  margin-top: 15px;
+  right: 15px;
+  top: 15px;
+}
+
+
+.aboutIM p{
+  color: f1f1f1;
+  font-size: 20px;
+  text-align: center;
+  padding-left: 150px;
+  padding-right: 150px;
+  line-height: 1.3;
+}
+
+#popup-container h2{
+  color: #000000;
+  font-size: 30px;
+  text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#popup-container p{
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#popup-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s;
+}
+
+#popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  max-width: 500px;
+  text-align: center;
+}
